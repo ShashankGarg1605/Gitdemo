@@ -1,0 +1,1313 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- <meta name="viewport" content="width = 1050, user-scalable = no" /> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+    <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/atrament.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="previous-button" title="Previous">
+        <img src="images/left-icon.png" onclick="document.getElementById('PrevAudio').play();">
+        <audio id="PrevAudio">
+            <source src="audio/page-flip.mp3">
+          </audio>
+    </div>
+    <div class="next-button" title="Next">
+        <img src="images/right-icon.png" onclick="document.getElementById('NextAudio').play();">
+        <audio id="NextAudio">
+            <source src="audio/page-flip.mp3">
+          </audio>
+    </div>
+    <!-- top strip -->
+    <div class="bottomStrip">
+        <div id="stickyNotes"><img title="Sticky Notes" src="images/sticky.png"></div>
+        <div id="spotlight"><img title="Spotlight" src="images/spotlight.png"></div>
+        <div id="highlighter"><img title="Highlighter" src="images/highlighter.png"></div>
+        <div id="zoomIn"><img title="Zoom In" src="images/zoomin.png"></div>
+        <div id="zoomOut"><img title="Zoom Out" src="images/zoomout.png"></div>
+        <div id="first_page"><img title="First Page" src="images/left-icon1.png"></div>
+        <input type="text" id="pages" class="page-number" name="pages">
+        <div id="last_page"><img title="Last Page " src="images/right-icon1.png"></div>
+
+        <!-- <div id="print_btn"><img src="images/print-icon.png"></div> -->
+    </div>
+    <!-- end strip -->
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P8" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                        <source src="video/Prozo_A_Alphabets_P8.mp4" type="video/mp4">
+                        <!--source src="movie.ogg" type="video/ogg"-->
+                         Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P10" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                            <source src="video/Prozo_A_Alphabets_P10.mp4" type="video/mp4">
+                            <!--source src="movie.ogg" type="video/ogg"-->
+                             Your browser does not support the video tag.
+                        </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P12" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                            <source src="video/Prozo_A_Alphabets_P12.mp4" type="video/mp4">
+                            <!--source src="movie.ogg" type="video/ogg"-->
+                             Your browser does not support the video tag.
+                        </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P14" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                <source src="video/Prozo_A_Alphabets_P14.mp4" type="video/mp4">
+                                <!--source src="movie.ogg" type="video/ogg"-->
+                                 Your browser does not support the video tag.
+                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P16" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                        <source src="video/Prozo_A_Alphabets_P16.mp4" type="video/mp4">
+                                        <!--source src="movie.ogg" type="video/ogg"-->
+                                         Your browser does not support the video tag.
+                                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P18" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                            <source src="video/Prozo_A_Alphabets_P18.mp4" type="video/mp4">
+                                            <!--source src="movie.ogg" type="video/ogg"-->
+                                             Your browser does not support the video tag.
+                                        </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P22" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P22.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P24" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P24.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P26" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P26.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P28" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P28.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P30" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P30.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P32" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P32.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P36" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P36.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P38" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P38.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P40" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P40.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P42" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P42.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P44" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                <source src="video/Prozo_A_Alphabets_P44.mp4" type="video/mp4">
+                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                 Your browser does not support the video tag.
+                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P46" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                    <source src="video/Prozo_A_Alphabets_P46.mp4" type="video/mp4">
+                                                    <!--source src="movie.ogg" type="video/ogg"-->
+                                                     Your browser does not support the video tag.
+                                                </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P50" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                        <source src="video/Prozo_A_Alphabets_P50.mp4" type="video/mp4">
+                                                        <!--source src="movie.ogg" type="video/ogg"-->
+                                                         Your browser does not support the video tag.
+                                                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P52" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                            <source src="video/Prozo_A_Alphabets_P52.mp4" type="video/mp4">
+                                                            <!--source src="movie.ogg" type="video/ogg"-->
+                                                             Your browser does not support the video tag.
+                                                        </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P54" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                            <source src="video/Prozo_A_Alphabets_P54.mp4" type="video/mp4">
+                                                            <!--source src="movie.ogg" type="video/ogg"-->
+                                                             Your browser does not support the video tag.
+                                                        </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P56" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                                <source src="video/Prozo_A_Alphabets_P56.mp4" type="video/mp4">
+                                                                <!--source src="movie.ogg" type="video/ogg"-->
+                                                                 Your browser does not support the video tag.
+                                                            </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P58" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                                        <source src="video/Prozo_A_Alphabets_P58.mp4" type="video/mp4">
+                                                                        <!--source src="movie.ogg" type="video/ogg"-->
+                                                                         Your browser does not support the video tag.
+                                                                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P62" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                                            <source src="video/Prozo_A_Alphabets_P62.mp4" type="video/mp4">
+                                                                            <!--source src="movie.ogg" type="video/ogg"-->
+                                                                             Your browser does not support the video tag.
+                                                                        </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P64" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                                                    <source src="video/Prozo_A_Alphabets_P64.mp4" type="video/mp4">
+                                                                                    <!--source src="movie.ogg" type="video/ogg"-->
+                                                                                     Your browser does not support the video tag.
+                                                                                </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P66" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                    </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                                                        <source src="video/Prozo_A_Alphabets_P66.mp4" type="video/mp4">
+                                                                                        <!--source src="movie.ogg" type="video/ogg"-->
+                                                                                         Your browser does not support the video tag.
+                                                                                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade video" id="Prozo_A_Alphabets_P70" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="yt-player">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                        <span aria-hidden="true">&times;</span>
+                                                                                    </button>
+                    <video width="100%" height="100%" controls="" id="book-video">
+                                                                                        <source src="video/Prozo_A_Alphabets_P70.mp4" type="video/mp4">
+                                                                                        <!--source src="movie.ogg" type="video/ogg"-->
+                                                                                         Your browser does not support the video tag.
+                                                                                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div class="cover-page"></div>
+                <!-- Page 0 -->
+                <!-- Content -->
+                <div class="page0 content">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Contents</h2>
+                            </div>
+                            <div class="col-sm-12">
+                                <a href="#" data-id="4" class="goto-page"> Learning Letter A/a <span>8 – 9</span></a>
+                                <a href="#" data-id="6" class="goto-page"> Learning Letter B/b <span>10 – 11</span></a>
+                                <a href="#" data-id="8" class="goto-page"> Learning Letter C/c <span>12 –13</span></a>
+                                <a href="#" data-id="10" class="goto-page"> Learning Letter D/d <span>14 – 15</span></a>
+                                <a href="#" data-id="12" class="goto-page"> Learning Letter E/e <span>16 – 17</span></a>
+                                <a href="#" data-id="14" class="goto-page"> Learning Letter F/f <span>18 – 19</span></a>
+                                <a href="#" data-id="0" class="goto-page"> Fun Time <span>20 – 21</span></a>
+                                <a href="#" data-id="16" class="goto-page"> Learning Letter G/g <span>22 – 23</span></a>
+                                <a href="#" data-id="18" class="goto-page"> Learning Letter H/h <span>24 – 25</span></a>
+                                <a href="#" data-id="20" class="goto-page"> Learning Letter I/i <span>26 – 27</span></a>
+                                <a href="#" data-id="22" class="goto-page"> Learning Letter J/j <span>28 – 29</span></a>
+                                <a href="#" data-id="24" class="goto-page"> Learning Letter K/k <span>30 – 31</span></a>
+                                <a href="#" data-id="26" class="goto-page">Learning Letter L/l <span>32 – 33</span></a>
+                                <a href="#" data-id="0" class="goto-page">Fun Time  <span>34 – 35</span></a>
+                                <a href="#" data-id="28" class="goto-page">Learning Letter M/m <span>36 – 37</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page00 content">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="#" data-id="30" class="goto-page">Learning Letter N/n <span>38 – 39</span></a>
+                                <a href="#" data-id="32" class="goto-page">Learning Letter O/o <span>40 – 41</span></a>
+                                <a href="#" data-id="34" class="goto-page">Learning Letter P/p <span>42 – 43</span></a>
+                                <a href="#" data-id="36" class="goto-page">Learning Letter Q/q <span>44 – 45</span></a>
+                                <a href="#" data-id="38" class="goto-page">Learning Letter R/r <span>46 – 47</span></a>
+                                <a href="#" data-id="0" class="goto-page">Fun time  <span>48 – 49</span></a>
+                                <a href="#" data-id="40" class="goto-page">Learning Letter S/s <span>50 – 51</span></a>
+                                <a href="#" data-id="42" class="goto-page">Learning Letter T/t <span>52 – 53</span></a>
+                                <a href="#" data-id="44" class="goto-page">Learning Letter U/u <span>54 – 55</span></a>
+                                <a href="#" data-id="46" class="goto-page">Learning Letter V/v <span>56 – 57</span></a>
+                                <a href="#" data-id="48" class="goto-page">Learning Letter W/w <span>58 – 59</span></a>
+                                <a href="#" data-id="0" class="goto-page">Fun Time  <span>60 – 61</span></a>
+                                <a href="#" data-id="50" class="goto-page">Learning Letter X/x <span>62 – 63</span></a>
+                                <a href="#" data-id="52" class="goto-page">Learning Letter Y/y<span>64 – 65</span></a>
+                                <a href="#" data-id="54" class="goto-page">Learning Letter Z/z <span>66 – 67</span></a>
+                                <a href="#" data-id="0" class="goto-page">Fun Time  <span>68 – 69</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 1 -->
+                <div class="page01 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P8">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P8.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page01 ">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P9.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 2 -->
+                <div class="page02 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P10">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P10.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page02">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P11.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page 3 -->
+                <div class="page03 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P12">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P12.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page03">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P13.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 4 -->
+                <div class="page04 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P14">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P14.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page04">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P15.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 5 -->
+                <div class="page05 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P16">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P16.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page05">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P17.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 6 -->
+                <div class="page06 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P18">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P18.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page06">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P19.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 7 -->
+                <!-- <div class="page07">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P20.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="page07">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P21.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div> -->
+                <div class="page07 ">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P22">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P22.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page07">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P23.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 8 -->
+                <div class="page08">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P24">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P24.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page08">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P25.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 9 -->
+                <div class="page09">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P26">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P26.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page09">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P27.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 10 -->
+                <div class="page10">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P28">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P28.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page10">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P29.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 11 -->
+                <div class="page11">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P30">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P30.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page11">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P31.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 12 -->
+                <div class="page12">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P32">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P32.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page12">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P33.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 13 -->
+                <div class="page13">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P36">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P36.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page13">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P37.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 14 -->
+                <div class="page14">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P38">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P38.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page14">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P39.html" scrolling="no" />
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 15 -->
+                <div class="page15">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P40">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P40.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page15">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P41.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 16 -->
+                <div class="page16">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P42">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P42.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page16">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P43.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 17 -->
+                <div class="page17">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P44">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P44.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page17">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P45.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 18 -->
+                <div class="page18">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P46">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P46.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page18">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P47.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 19 -->
+                <div class="page19">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P50">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P50.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page19">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P51.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 20 -->
+                <div class="page20">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P52">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P52.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page20">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P53.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 21 -->
+                <div class="page21">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P54">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P54.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page21">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P55.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 22 -->
+                <div class="page22">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P56">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P56.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page22">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P57.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 23 -->
+                <div class="page23">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P58">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P58.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page23">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P59.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 24 -->
+                <div class="page24">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P62">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P62.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page24">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P63.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 25 -->
+                <div class="page25">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P64">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P64.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page25">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P65.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 26 -->
+                <div class="page26">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P66">
+                                <img src="images/play-icon.png"></span><img src="images/Prozo_A_Alphabets_P66.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="page26">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P67.html" scrolling="no" />
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Page 27 -->
+                <div class="page27">
+                    <div class="gradient-left"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <embed src="mobile/Prozo_A_Alphabets_P68.html" scrolling="no" />
+                        </div>
+                    </div>
+                </div>
+                <div class="page28">
+                    <div class="gradient-right"></div>
+                    <div class="container-fluid"></div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="play-icon" data-toggle="modal" data-target="#Prozo_A_Alphabets_P70">
+                                <img src="images/play-icon.png"></span><img class="p70Img" src="images/Prozo_A_Alphabets_P70.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div style="background:#cccccc"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $('body').on('hidden.bs.modal', '.modal', function() {
+            $('#book-video').trigger('pause');
+            $('#book-video').trigger('load');
+        });
+    </script>
+    <script type="text/javascript">
+        function loadApp() {
+
+            // Create the flipbook
+
+            $('.flipbook').turn({
+                // Width
+
+                width: 1280,
+
+                // Height
+
+                height: 750,
+
+                // Elevation
+
+                elevation: 50,
+
+                // Enable gradients
+
+                gradients: true,
+
+                // Auto center this flipbook
+
+                autoCenter: true
+
+            });
+
+            $(document).keydown(function(e) {
+
+                var previous = 37,
+                    next = 39,
+                    esc = 27;
+
+                switch (e.keyCode) {
+                    case previous:
+
+                        // left arrow
+                        $('.flipbook').turn('previous');
+                        e.preventDefault();
+
+                        break;
+                    case next:
+
+                        //right arrow
+                        $('.flipbook').turn('next');
+                        e.preventDefault();
+
+                        break;
+                }
+
+
+                // Events for the next button
+
+
+            });
+
+            /*
+              Total And Current
+             */
+
+            $(".flipbook").bind("turned", function(event, page, view) {
+                $("#pages").val($(".flipbook").turn('page') + "/" + $(".flipbook").turn('pages'))
+            });
+            $("#pages").val($(".flipbook").turn('page') + "/" + $(".flipbook").turn('pages'))
+
+            $('.next-button').bind($.mouseEvents.over, function() {
+
+                $(this).addClass('next-button-hover');
+
+            }).bind($.mouseEvents.out, function() {
+
+                $(this).removeClass('next-button-hover');
+
+            }).bind($.mouseEvents.down, function() {
+
+                $(this).addClass('next-button-down');
+
+            }).bind($.mouseEvents.up, function() {
+
+                $(this).removeClass('next-button-down');
+
+            }).click(function() {
+
+                $('.flipbook').turn('next');
+
+            });
+
+            // Events for the next button
+
+            $('.previous-button').bind($.mouseEvents.over, function() {
+
+                $(this).addClass('previous-button-hover');
+
+            }).bind($.mouseEvents.out, function() {
+
+                $(this).removeClass('previous-button-hover');
+
+            }).bind($.mouseEvents.down, function() {
+
+                $(this).addClass('previous-button-down');
+
+            }).bind($.mouseEvents.up, function() {
+
+                $(this).removeClass('previous-button-down');
+
+            }).click(function() {
+
+                $('.flipbook').turn('previous');
+
+            });
+        }
+
+        // Load the HTML4 version if there's not CSS transform
+
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['lib/turn.js'],
+            nope: ['lib/turn.html4.min.js'],
+            both: ['css/basic.css'],
+            complete: loadApp
+        });
+
+        $("#print_btn").click(function(e) {
+            window.print()
+        })
+
+        $("#first_page").click(function(e) {
+            $(".flipbook").turn("page", 1);
+        })
+
+        $("#last_page").click(function(e) {
+            $(".flipbook").turn("page", $(".flipbook").turn('pages'));
+        })
+
+        $("#goto-page").click(function(e) {
+            alert(1)
+            $(".flipbook").turn("page", $(this).data('id'));
+        })
+
+        $(document).ready(function() {
+            $("body").delegate(".goto-page", "click", function(e) {
+                e.preventDefault();
+                $(".flipbook").turn("page", $(this).data('id'));
+            })
+        });
+    </script>
+
+</body>
+
+</html>
